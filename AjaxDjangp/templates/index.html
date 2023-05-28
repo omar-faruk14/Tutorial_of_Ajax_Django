@@ -9,12 +9,64 @@
   <body>
 
 
-    <h1 class="text-center">Hello, world!</h1>
+    <h1 class="text-center p-4">Hello, world!</h1>
     
     <div class="container">
         <div class="row">
-            <div class="col-6">.col-6</div>
-            <div class="col-6">.col-6</div>
+            <div class="col-6 col-md-4">
+                <div class="h3">Form Part</div>
+                <form>
+                    <div class="mb-3">
+                      <label for="UserEmail" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="UserEmail" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="UserPass" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="UserPass">
+                    </div>
+                    <div class="mb-3">
+                        <label for="UserNumber" class="form-label">PhoneNumber</label>
+                        <input type="number" class="form-control" id="UserNumber">
+                      </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </form>
+            </div>
+
+
+            <!--Second Part-->
+
+            <div class="col-6 col-md-8">
+                <div class="h3">Table Information Part</div>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Password</th>
+                        <th scope="col">PhoneNumber</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+
+            </div>
+
+
+
         </div>
     </div>
 
