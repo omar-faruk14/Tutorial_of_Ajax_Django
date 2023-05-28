@@ -1,3 +1,3 @@
 from django.contrib import admin
-
-# Register your models here.
+from AjaxDjangoApp.models import AjaxCrud
+admin.site.register(AjaxCrud)

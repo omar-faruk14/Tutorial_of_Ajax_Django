@@ -1,3 +1,8 @@
-from django.db import models
+from django.db.models import Model, EmailField, IntegerField, CharField
 
-# Create your models here.
+class AjaxCrud(Model):
+    Email = EmailField()
+    Password = IntegerField()
+    PhoneNumber = CharField(max_length=20)
+
+
